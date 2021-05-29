@@ -10,11 +10,11 @@ const courses = [
 ];
 
 app.get('/', (req,res) => {
-    res.send('Hello World');
+    res.json('Hello World');
 });
 
 app.get('/api/courses', (req, res)=> {
-    res.send(courses);
+    res.json(courses);
 });
 
 function validateCourse(course) {
